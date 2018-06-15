@@ -1,0 +1,23 @@
+{
+  "name": "onfido-react-sample",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "onfido-sdk-ui": "^2.4.1",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build:ios": "yarn build && cd cordova && cordova build ios && cd ..",
+    "build:android": "yarn build && cd cordova && cordova build android && cd ..",
+    "run:ios": "cd cordova && cordova run ios && cd ..",
+    "run:android": "cd cordova && cordova run android && cd .."
+  }
+}
